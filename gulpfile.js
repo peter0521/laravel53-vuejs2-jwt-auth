@@ -15,5 +15,10 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
+       .webpack('app.js')
+       .browserSync({
+            files: ['app/**/*', 'public/**/*', 'resources/views/**/*'],
+            port: 5000,
+            proxy: 'dev.laravel53-vuejs2-jwt-auth'
+        });
 });
