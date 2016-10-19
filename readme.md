@@ -10,18 +10,20 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## Install Step
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+    $ git clone https://github.com/imagine10255/laravel53-vuejs2-jwt-auth.git
 
-## Contributing
+    $ cd ./laravel53-vuejs2-jwt-auth.git
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+    $ composer install
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+    $ yarn install
+    
+    $ cp .env.example .env
+    
+    check .env setting
+    
+    $ php artisan migrate
+    
+    $ gulp watch
